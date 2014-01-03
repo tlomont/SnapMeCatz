@@ -79,4 +79,22 @@ def do_login():
 	media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 	s.send(media_id, recipient)
 
+	return '''
+		<html>
+		<head>
+		<title> SnapMeCatz! </title>
+		<style type="text/css">
+		body{
+			font-family: 'Tahoma'
+		}
+		</style>
+		</head>
+		<body>
+		<div style="margin:20px auto; text-align:center; width:400px; height: 165px">
+		<h1> SnapCat sent!</h1>
+		<div>
+		<p> <a href="../login">Return Home</a></p>
+		<body>
+		'''
+
 run(host='localhost', port=8080, debug=True)
