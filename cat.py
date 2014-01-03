@@ -57,6 +57,7 @@ def login():
 		<input type="submit" value="SnapCat!"></p>
 		</form>
 		</div>
+		<p style="text-align:center; font-family: Arial; font-size: 14px;"> Make sure to accept SnapMeCatz as a friend!</p>
 		<html>
 		'''
 
