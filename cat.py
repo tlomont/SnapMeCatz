@@ -37,7 +37,7 @@ for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
 	a.append(elem['href'])
 	#print elem['href']
 
-@get('/login')
+@get('/')
 def login():
 	return '''
 		<html>
@@ -51,7 +51,7 @@ def login():
 		</head>
 		<div style="margin:20px auto; text-align:center; width:400px; height: 165px; border:2px solid; border-radius:20px; background-color: lightgray">
 		<h1> SnapMeCatz!</h1>
-		<p><form name="input" action="/login" method="post">
+		<p><form name="input" action="/" method="post">
 		Your Username: 
 		<input type="text" name="username" style="border: 2px solid rgb(139, 188, 190); border-radius:5px"></p>
 		<input type="submit" value="SnapCat!"></p>
@@ -61,7 +61,7 @@ def login():
 		<html>
 		'''
 
-@post('/login')
+@post('/')
 def do_login():
 	from random import choice
 	url_final = choice(a)
@@ -93,7 +93,7 @@ def do_login():
 		<div style="margin:20px auto; text-align:center; width:400px; height: 165px">
 		<h1> SnapCat sent!</h1>
 		<div>
-		<p> <a href="../login">Return Home</a></p>
+		<p> <a href="../">Return Home</a></p>
 		<body>
 		'''
 
