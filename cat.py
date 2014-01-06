@@ -21,7 +21,7 @@ for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
 	a.append(elem['href'])
 	#print a
 
-url = 'http://www.reddit.com/r/catpictures/?count=25&after=t3_1u5r74'
+url = 'http://www.reddit.com/r/cats'
 conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
 html = conn.read()
 soup = BeautifulSoup(html)
@@ -29,7 +29,7 @@ for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
 	a.append(elem['href'])
 	#print elem['href']
 
-url = 'http://www.reddit.com/r/catpictures/?count=75&after=t3_1u0dwn'
+url = 'http://www.reddit.com/r/StartledCats/'
 conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
 html = conn.read()
 soup = BeautifulSoup(html)
