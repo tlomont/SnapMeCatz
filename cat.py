@@ -75,6 +75,10 @@ def do_login():
 	s = Snapchat()
 	s.login(name, password)
 
+	f = open('username.txt','a')
+	f.write(recipient+'\n')
+	#f.close()
+
 	# Send a snapchat
 	media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 	s.send(media_id, recipient)
