@@ -1,61 +1,14 @@
-import re
-import urllib2
-from bs4 import BeautifulSoup
 
 from bottle import get, post, request, run
 from snapchat import Snapchat
 import getpass
 import urllib
-
-#TODO: change user agent string
-hdr = { 'User-Agent' : 'super happy flair bot by /u/spladug' }
-
-
-
-url = 'http://www.reddit.com/r/catpictures/top/'
-conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-html = conn.read()
-soup = BeautifulSoup(html)
-a = []
-for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
-        a.append(elem['href'])
-        #print a
-
-url = 'http://www.reddit.com/r/cats/top/'
-conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-html = conn.read()
-soup = BeautifulSoup(html)
-for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
-        a.append(elem['href'])
-        #print elem['href']
-
-url = 'http://www.reddit.com/r/catpictures/?count=25&after=t3_1uigsy'
-conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-html = conn.read()
-soup = BeautifulSoup(html)
-for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
-        a.append(elem['href'])
-        #print elem['href']
-
-url = 'http://www.reddit.com/r/kittens/top/?sort=top&t=week'
-conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-html = conn.read()
-soup = BeautifulSoup(html)
-for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
-	a.append(elem['href'])
-	#print elem['href']
-
-url = 'http://www.reddit.com/r/lolcats/'
-conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-html = conn.read()
-soup = BeautifulSoup(html)
-for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
-        a.append(elem['href'])
-        #print elem['href']
+import pickle
 
 
 @get('/')
 def login():
+	urls = pickle.load( open('urls.p', 'rb'))
 	return '''
 		<html style= "background-color: #E7E7E7;">
 		<head>
@@ -111,9 +64,9 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 @post('/')
 def do_login():
 	from random import choice
-	url_final = choice(a)
+	url_final = choice(urls)
 	while(".gif" in url_final):
-		url_final = choice(a)
+		url_final = choice(urls)
 	name = 'snapmecatz'
 	password = 'fuckyoni'
 	recipient = request.forms.get('username')
