@@ -2600,3 +2600,11 @@ Hit Ctrl-C to quit.
 108.18.124.133 - - [09/Jan/2014 21:43:40] "GET /apple-touch-icon.png HTTP/1.1" 404 760
 108.18.124.133 - - [09/Jan/2014 21:43:40] "GET /favicon.ico HTTP/1.1" 404 742
 98.169.47.241 - - [09/Jan/2014 21:50:25] "GET / HTTP/1.1" 200 2593
+98.169.47.241 - - [09/Jan/2014 21:58:45] "GET / HTTP/1.1" 200 2593
+98.169.47.241 - - [09/Jan/2014 21:58:54] "POST / HTTP/1.1" 200 1484
+98.169.47.241 - - [09/Jan/2014 21:58:55] "GET / HTTP/1.1" 200 2593
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.242.67 - - [09/Jan/2014 22:03:54] "GET / HTTP/1.1" 200 2593

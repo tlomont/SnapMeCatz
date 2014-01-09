@@ -123,8 +123,8 @@ def do_login():
 	s.login(name, password)
 
 	#add username to file
-	f = open('username.txt','a')
-        f.write(recipient+'\n')
+	#f = open('username.txt','a')
+        #f.write(recipient+'\n')
 
 	# Send a snapchat
 	media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
