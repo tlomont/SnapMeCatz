@@ -29,7 +29,7 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
                 <div style="margin:20px auto; text-align:center; width:400px; height: 165px; border:2px solid; border-radius:20px; background-color: white">
                 <h1 style="font-weight: 200"> SnapMeCatz!</h1>
                 <p><form name="input" action="/" method="post">
-                Your Username: 
+                Snapchat Username: 
                 <input type="text" name="username" style="border: 2px solid rgb(139, 188, 190); border-radius:5px"></p>
                 <input type="submit" value="SnapCat!" style="
     padding: 5px 15px 5px !important; 
