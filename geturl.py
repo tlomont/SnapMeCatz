@@ -28,7 +28,7 @@ if __name__ == "__main__":
                 a.append(elem['href'])
                 #print elem['href']
 
-        url = 'http://www.reddit.com/r/catpictures/?count=25&after=t3_1uigsy'
+        url = 'http://www.reddit.com/r/catpictures/?count=25'
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
