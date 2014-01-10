@@ -9,6 +9,7 @@ import urllib2
 from bs4 import BeautifulSoup
 import urllib
 
+<<<<<<< HEAD
 a=[]
 
 #TODO: change user agent string
@@ -57,6 +58,13 @@ for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
 
 @get('/')
 def login():
+=======
+urls = pickle.load( open('urls.p', 'rb'))
+
+@get('/')
+def login():
+	
+>>>>>>> tommy
 	return '''
 		<html style= "background-color: #E7E7E7;">
 		<head>
@@ -207,4 +215,4 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 '''
 
 
-run(host='0.0.0.0', port=80)
+run(host='localhost', port=8080)
