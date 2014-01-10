@@ -4,11 +4,10 @@ import getpass
 import urllib
 import pickle
 
-urls = pickle.load( open('urls.p', 'rb'))
+#urls = pickle.load( open('urls.p', 'rb'))
 
 @get('/')
 def login():
-        
         return '''
                 <html style= "background-color: #E7E7E7;">
                 <head>
@@ -64,6 +63,7 @@ def login():
 
 @post('/')
 def do_login():
+        urls = pickle.load( open('urls.p', 'rb'))
         from random import choice
         url_final = choice(urls)
         while(".gif" in url_final):
