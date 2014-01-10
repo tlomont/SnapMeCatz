@@ -2652,3 +2652,299 @@ Hit Ctrl-C to quit.
 140.180.242.67 - - [10/Jan/2014 00:49:40] "GET / HTTP/1.1" 200 3038
 140.180.242.67 - - [10/Jan/2014 00:49:48] "POST / HTTP/1.1" 200 1792
 140.180.242.67 - - [10/Jan/2014 00:52:38] "GET / HTTP/1.1" 200 3038
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.242.67 - - [10/Jan/2014 03:58:57] "GET / HTTP/1.1" 200 3318
+140.180.242.67 - - [10/Jan/2014 03:59:03] "POST / HTTP/1.1" 200 1956
+140.180.242.67 - - [10/Jan/2014 03:59:25] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:22:05] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:22:13] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:22:16] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:22:29] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:23:21] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:23:34] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:23:35] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:23:48] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:23:49] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:23:59] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:24:02] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:24:17] "POST / HTTP/1.1" 200 1956
+205.208.115.159 - - [10/Jan/2014 04:24:19] "GET / HTTP/1.1" 200 3318
+205.208.115.159 - - [10/Jan/2014 04:28:01] "POST / HTTP/1.1" 200 1956
+192.96.204.42 - - [10/Jan/2014 05:02:54] "GET / HTTP/1.1" 200 3318
+192.96.204.42 - - [10/Jan/2014 05:04:30] "GET / HTTP/1.1" 200 3318
+192.96.204.42 - - [10/Jan/2014 05:04:31] "GET /domainsigma_removal_d1a4aa8d342b739c26688a631ac78163adbc6efc.html HTTP/1.1" 404 850
+98.169.47.241 - - [10/Jan/2014 05:05:06] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 05:05:09] "GET /about HTTP/1.1" 200 2273
+98.169.47.241 - - [10/Jan/2014 05:10:57] "GET / HTTP/1.1" 200 3318
+108.200.56.142 - - [10/Jan/2014 05:25:30] "GET / HTTP/1.1" 200 3318
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+70.120.76.202 - - [10/Jan/2014 05:27:50] "GET / HTTP/1.1" 200 3318
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+216.80.60.67 - - [10/Jan/2014 05:29:17] "GET / HTTP/1.1" 200 3318
+67.185.130.34 - - [10/Jan/2014 05:29:22] "GET / HTTP/1.1" 200 3318
+74.197.184.171 - - [10/Jan/2014 05:29:43] "GET / HTTP/1.1" 200 3318
+76.182.145.185 - - [10/Jan/2014 05:29:58] "GET / HTTP/1.1" 200 3318
+166.147.104.25 - - [10/Jan/2014 05:30:36] "GET / HTTP/1.1" 200 3318
+157.55.32.141 - - [10/Jan/2014 05:31:45] "GET /robots.txt HTTP/1.1" 404 744
+206.123.63.184 - - [10/Jan/2014 05:32:48] "GET / HTTP/1.1" 200 3318
+70.116.155.201 - - [10/Jan/2014 05:33:15] "GET / HTTP/1.1" 200 3318
+67.183.236.160 - - [10/Jan/2014 05:34:19] "GET / HTTP/1.1" 200 3318
+76.31.65.233 - - [10/Jan/2014 05:35:25] "GET / HTTP/1.1" 200 3318
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+50.141.226.213 - - [10/Jan/2014 05:36:06] "GET / HTTP/1.1" 200 3318
+207.172.239.83 - - [10/Jan/2014 05:36:06] "GET / HTTP/1.1" 200 3318
+76.118.94.114 - - [10/Jan/2014 05:36:30] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 05:38:29] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 05:38:41] "POST / HTTP/1.1" 200 1956
+98.169.47.241 - - [10/Jan/2014 05:38:43] "GET / HTTP/1.1" 200 3318
+207.172.239.83 - - [10/Jan/2014 05:38:58] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 05:41:00] "GET / HTTP/1.1" 200 3318
+207.172.239.83 - - [10/Jan/2014 05:41:45] "GET / HTTP/1.1" 200 3318
+76.113.42.157 - - [10/Jan/2014 05:42:08] "GET / HTTP/1.1" 200 3318
+67.175.232.55 - - [10/Jan/2014 05:42:34] "GET / HTTP/1.1" 200 3318
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 212, in write
+    self.send_headers()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 270, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 191, in send_preamble
+    self._write('HTTP/%s %s\r\n' % (self.http_version,self.status))
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 391, in _write
+    self.stdout.write(data)
+  File "/usr/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+67.175.232.55 - - [10/Jan/2014 05:42:34] "GET / HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+67.175.232.55 - - [10/Jan/2014 05:42:34] "GET / HTTP/1.1" 200 3318
+96.28.14.109 - - [10/Jan/2014 05:43:36] "GET / HTTP/1.1" 200 3318
+70.197.201.251 - - [10/Jan/2014 05:44:03] "GET / HTTP/1.1" 200 3318
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.190.189 - - [10/Jan/2014 06:14:54] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:14:57] "GET /about HTTP/1.1" 200 2273
+98.169.47.241 - - [10/Jan/2014 06:14:59] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 06:15:32] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:15:44] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:16:18] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:16:20] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:16:29] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:16:41] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:16:47] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:17:21] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:17:22] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:17:30] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:17:34] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:17:42] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:17:56] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:18:04] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 06:18:06] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 06:18:58] "POST / HTTP/1.1" 200 1956
+140.180.190.189 - - [10/Jan/2014 06:19:36] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 06:19:59] "GET /about HTTP/1.1" 200 2273
+98.169.47.241 - - [10/Jan/2014 06:20:01] "GET / HTTP/1.1" 200 3318
+96.255.94.149 - - [10/Jan/2014 06:20:47] "GET / HTTP/1.1" 200 3318
+96.255.94.149 - - [10/Jan/2014 06:20:54] "GET /about HTTP/1.1" 200 2273
+50.81.151.34 - - [10/Jan/2014 06:23:18] "GET / HTTP/1.1" 200 3318
+173.225.254.46 - - [10/Jan/2014 06:24:49] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:26:21] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:27:10] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:27:17] "POST / HTTP/1.1" 200 1956
+140.180.190.189 - - [10/Jan/2014 06:27:33] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:29:09] "POST / HTTP/1.1" 200 1956
+140.180.190.189 - - [10/Jan/2014 06:29:28] "GET / HTTP/1.1" 200 3318
+140.180.190.189 - - [10/Jan/2014 06:32:06] "GET / HTTP/1.1" 200 3318
+157.55.32.141 - - [10/Jan/2014 07:06:23] "GET / HTTP/1.0" 200 3318
+96.231.167.64 - - [10/Jan/2014 07:20:56] "GET / HTTP/1.1" 200 3318
+199.30.25.79 - - [10/Jan/2014 07:56:44] "GET / HTTP/1.1" 200 3318
+183.60.20.35 - - [10/Jan/2014 09:16:41] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1" 404 806
+183.60.20.35 - - [10/Jan/2014 09:16:41] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 776
+183.60.20.35 - - [10/Jan/2014 09:16:42] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 776
+183.60.20.35 - - [10/Jan/2014 09:16:42] "GET /pma/scripts/setup.php HTTP/1.1" 404 762
+183.60.20.35 - - [10/Jan/2014 09:16:43] "GET /myadmin/scripts/setup.php HTTP/1.1" 404 770
+183.60.20.35 - - [10/Jan/2014 09:16:43] "GET /MyAdmin/scripts/setup.php HTTP/1.1" 404 770
+108.56.233.5 - - [10/Jan/2014 13:12:04] "GET / HTTP/1.1" 200 3318
+70.215.71.172 - - [10/Jan/2014 13:47:04] "GET / HTTP/1.1" 200 3318
+162.104.17.167 - - [10/Jan/2014 13:57:42] "GET / HTTP/1.1" 200 3318
+166.147.104.150 - - [10/Jan/2014 14:06:02] "GET / HTTP/1.1" 200 3318
+66.241.128.169 - - [10/Jan/2014 14:14:18] "GET / HTTP/1.1" 200 3318
+69.119.144.54 - - [10/Jan/2014 14:33:22] "GET / HTTP/1.1" 200 3318
+69.119.144.54 - - [10/Jan/2014 14:33:44] "POST / HTTP/1.1" 200 1956
+54.211.41.169 - - [10/Jan/2014 14:34:03] "HEAD / HTTP/1.1" 200 0
+69.116.120.94 - - [10/Jan/2014 15:17:26] "GET / HTTP/1.1" 200 3318
+69.116.120.94 - - [10/Jan/2014 15:17:51] "POST / HTTP/1.1" 200 1956
+69.116.120.94 - - [10/Jan/2014 15:17:56] "POST / HTTP/1.1" 200 1956
+69.116.120.94 - - [10/Jan/2014 15:18:06] "GET / HTTP/1.1" 200 3318
+98.217.153.130 - - [10/Jan/2014 15:35:09] "GET / HTTP/1.1" 200 3318
+98.217.153.130 - - [10/Jan/2014 15:35:33] "POST / HTTP/1.1" 200 1956
+140.180.253.87 - - [10/Jan/2014 16:02:51] "GET / HTTP/1.1" 200 3318
+140.180.253.87 - - [10/Jan/2014 16:02:51] "GET /favicon.ico HTTP/1.1" 404 742
+140.180.253.87 - - [10/Jan/2014 16:03:11] "GET /about HTTP/1.1" 200 2273
+140.180.253.87 - - [10/Jan/2014 16:03:12] "GET /favicon.ico HTTP/1.1" 404 742
+98.169.47.241 - - [10/Jan/2014 16:24:59] "GET / HTTP/1.1" 200 3318
+205.208.115.103 - - [10/Jan/2014 16:35:17] "GET / HTTP/1.1" 200 3318
+205.208.115.103 - - [10/Jan/2014 16:35:24] "POST / HTTP/1.1" 200 1956
+205.208.115.103 - - [10/Jan/2014 16:35:26] "GET / HTTP/1.1" 200 3318
+166.216.165.30 - - [10/Jan/2014 16:44:10] "GET /apple-touch-icon.png HTTP/1.1" 404 760
+166.216.165.30 - - [10/Jan/2014 16:44:11] "GET /favicon.ico HTTP/1.1" 404 742
+98.169.47.241 - - [10/Jan/2014 16:52:36] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 16:52:39] "GET /about HTTP/1.1" 200 2273
+98.169.47.241 - - [10/Jan/2014 16:56:05] "GET / HTTP/1.1" 200 3318
+46.38.48.66 - - [10/Jan/2014 17:18:04] "GET / HTTP/1.0" 200 3318
+109.68.191.26 - - [10/Jan/2014 17:46:00] "GET / HTTP/1.0" 200 3318
+96.231.167.64 - - [10/Jan/2014 17:54:42] "GET / HTTP/1.1" 200 3318
+166.216.165.46 - - [10/Jan/2014 18:08:52] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 18:24:56] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 18:26:09] "GET / HTTP/1.1" 200 3318
+96.231.167.64 - - [10/Jan/2014 18:26:21] "POST / HTTP/1.1" 200 1956
+96.231.167.64 - - [10/Jan/2014 18:27:38] "GET / HTTP/1.1" 200 3318
+140.180.190.191 - - [10/Jan/2014 18:30:47] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 18:43:44] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 18:43:56] "POST / HTTP/1.1" 200 1956
+98.169.47.241 - - [10/Jan/2014 18:43:59] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 18:44:10] "POST / HTTP/1.1" 200 1956
+98.169.47.241 - - [10/Jan/2014 18:44:12] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 18:44:20] "POST / HTTP/1.1" 200 1956
+98.169.47.241 - - [10/Jan/2014 18:44:22] "GET / HTTP/1.1" 200 3318
+96.241.68.19 - - [10/Jan/2014 19:01:57] "GET / HTTP/1.1" 200 3318
+66.241.128.169 - - [10/Jan/2014 19:11:28] "GET / HTTP/1.1" 200 3318
+198.228.200.21 - - [10/Jan/2014 19:43:27] "GET / HTTP/1.1" 200 3318
+186.104.142.73 - - [10/Jan/2014 19:44:10] "GET / HTTP/1.1" 200 3318
+198.228.200.21 - - [10/Jan/2014 19:44:10] "GET / HTTP/1.1" 200 3318
+70.167.246.213 - - [10/Jan/2014 19:44:39] "GET / HTTP/1.1" 200 3318
+108.217.28.63 - - [10/Jan/2014 19:44:46] "GET / HTTP/1.1" 200 3318
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.190.191 - - [10/Jan/2014 20:30:33] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 20:53:04] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 20:53:10] "POST / HTTP/1.1" 200 1956
+98.169.47.241 - - [10/Jan/2014 20:53:12] "GET / HTTP/1.1" 200 3318
+35.11.220.4 - - [10/Jan/2014 20:57:57] "GET / HTTP/1.1" 200 3318
+35.11.220.4 - - [10/Jan/2014 20:58:08] "POST / HTTP/1.1" 200 1956
+35.11.220.4 - - [10/Jan/2014 20:58:10] "POST / HTTP/1.1" 200 1956
+35.11.220.4 - - [10/Jan/2014 20:58:14] "POST / HTTP/1.1" 200 1956
+35.11.220.4 - - [10/Jan/2014 20:58:16] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 20:58:59] "GET / HTTP/1.1" 200 3318
+216.15.14.234 - - [10/Jan/2014 21:02:52] "GET / HTTP/1.1" 200 3318
+216.15.14.234 - - [10/Jan/2014 21:03:05] "POST / HTTP/1.1" 200 1956
+216.15.14.234 - - [10/Jan/2014 21:03:07] "GET / HTTP/1.1" 200 3318
+216.15.14.234 - - [10/Jan/2014 21:03:16] "POST / HTTP/1.1" 200 1956
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.190.191 - - [10/Jan/2014 21:08:29] "GET / HTTP/1.1" 200 3318
+54.197.60.238 - - [10/Jan/2014 21:09:39] "HEAD / HTTP/1.1" 200 0
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.190.191 - - [10/Jan/2014 21:10:22] "GET / HTTP/1.1" 200 3318
+140.180.190.191 - - [10/Jan/2014 21:10:24] "GET / HTTP/1.1" 200 3318
+140.180.190.191 - - [10/Jan/2014 21:13:16] "GET / HTTP/1.1" 200 3318
+Bottle v0.11.6 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80/
+Hit Ctrl-C to quit.
+
+140.180.190.191 - - [10/Jan/2014 21:20:20] "GET / HTTP/1.1" 200 3318
+140.180.190.191 - - [10/Jan/2014 21:20:21] "GET / HTTP/1.1" 200 3318
+140.180.190.191 - - [10/Jan/2014 21:23:44] "GET / HTTP/1.1" 200 3318
+24.221.243.157 - - [10/Jan/2014 21:28:22] "GET /apple-touch-icon.png HTTP/1.1" 404 760
+24.221.243.157 - - [10/Jan/2014 21:28:32] "GET /favicon.ico HTTP/1.1" 404 742
+24.221.243.157 - - [10/Jan/2014 21:46:08] "GET /apple-touch-icon.png HTTP/1.1" 404 760
+24.221.243.157 - - [10/Jan/2014 21:46:12] "GET /favicon.ico HTTP/1.1" 404 742
+50.45.102.239 - - [10/Jan/2014 21:48:37] "GET / HTTP/1.1" 200 3318
+50.45.102.239 - - [10/Jan/2014 21:48:38] "GET /favicon.ico HTTP/1.1" 404 742
+140.180.254.76 - - [10/Jan/2014 21:59:59] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 22:56:29] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 22:56:29] "GET / HTTP/1.1" 200 3318
+219.139.20.9 - - [10/Jan/2014 22:59:51] "GET /manager/html HTTP/1.1" 404 744
+140.180.242.132 - - [10/Jan/2014 23:02:47] "GET / HTTP/1.1" 200 3318
+140.180.242.132 - - [10/Jan/2014 23:03:27] "GET /favicon.ico HTTP/1.1" 404 742
+70.210.72.82 - - [10/Jan/2014 23:34:29] "GET / HTTP/1.1" 200 3318
+70.210.72.82 - - [10/Jan/2014 23:34:43] "POST / HTTP/1.1" 200 1956
+70.210.72.82 - - [10/Jan/2014 23:35:46] "GET / HTTP/1.1" 200 3318
+70.210.72.82 - - [10/Jan/2014 23:35:56] "POST / HTTP/1.1" 200 1956
+98.217.153.130 - - [10/Jan/2014 23:38:31] "GET / HTTP/1.1" 200 3318
+98.169.47.241 - - [10/Jan/2014 23:41:01] "GET / HTTP/1.1" 200 3318

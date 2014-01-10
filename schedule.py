@@ -11,7 +11,7 @@ while(".gif" in url_final):
         url_final = choice(urls)
 name = 'snapmecatz'
 password = 'fuckyoni'
-recipient = 'plowcity,waleepmaleep,Mariedanielle17'
+recipient = 'plowcity,waleepmaleep,Mariedanielle17,aronhvm'
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"
 s = Snapchat()
