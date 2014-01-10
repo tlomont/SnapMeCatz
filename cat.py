@@ -5,10 +5,11 @@ import getpass
 import urllib
 import pickle
 
+urls = pickle.load( open('urls.p', 'rb'))
 
 @get('/')
 def login():
-	urls = pickle.load( open('urls.p', 'rb'))
+	
 	return '''
 		<html style= "background-color: #E7E7E7;">
 		<head>
@@ -159,4 +160,4 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 '''
 
 
-run(host='0.0.0.0', port=80)
+run(host='localhost', port=8080)
