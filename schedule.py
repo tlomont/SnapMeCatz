@@ -9,9 +9,11 @@ from random import choice
 url_final = choice(urls)
 while(".gif" in url_final):
         url_final = choice(urls)
+with open ("php/friends.txt", "r") as myfile:
+	friends=myfile.read()
 name = 'snapmecatz'
 password = 'fuckyoni'
-recipient = 'plowcity,waleepmaleep,Mariedanielle17,aronhvm'
+recipient = friends
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"
 s = Snapchat()
