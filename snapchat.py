@@ -503,3 +503,23 @@ class Snapchat:
             return True
 
         return False
+    def delete_friend(self, person):
+
+        if not self.logged_in:
+            return False
+
+        timestamp = self._timestamp()
+        data = {
+            'username': self.username,
+            'timestamp': timestamp,
+            'action':'delete',
+            'friend':person
+            
+        }
+
+        params = [
+            self.auth_token,
+            timestamp
+        ]
+
+        result = self.post('/friend', data, params)

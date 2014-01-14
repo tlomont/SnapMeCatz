@@ -47,6 +47,21 @@ def send():
 def about():
         return template('Templates/about')
 
+@get('/unsubscribe')
+def unsubscribe():
+    return template('Templates/unsubscribe')
+
+@post('/unsubscribe')
+def do_unsubscribe():
+    name = 'snapmecatz'
+    password = 'fuckyoni'
+
+    s = Snapchat()
+    s.login(name, password)
+
+    s.delete_friend('plowcity')
+    return template('Templates/unsubscribed')
+
 from bottle import error
 @error(404)
 def error404(error):
