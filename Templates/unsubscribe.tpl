@@ -35,7 +35,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgb
 font: -webkit-body;"></p>
 </form>
 </div>
-<p style="text-align:center; font-size: 14px; font-weight: 100"> You will no longer recieve daily snapcats </p>
+<p style="text-align:center; font-size: 14px; font-weight: 100"> You will no longer receive daily snapcats </p>
 <p style="text-align:center; font-weight:100; font-size: 14px;"> <a href="/about"> Return Home</a></p>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
