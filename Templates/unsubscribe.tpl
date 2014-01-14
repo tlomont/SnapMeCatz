@@ -18,7 +18,7 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 <body>
 <div style="margin:20px auto; text-align:center; width:400px; height: 165px; border:2px solid; border-radius:20px; background-color: white">
 <h1 style="font-weight: 200"> Unsubscribe</h1>
-<p><form name="input" action="/login" method="post">
+<p><form name="input" action="/unsubscribe" method="post">
 Snapchat Username: 
 <input type="text" name="username" style="border: 2px solid rgb(139, 188, 190); border-radius:5px"></p>
 <input type="submit" value="SnapCat!" style="
@@ -35,7 +35,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgb
 font: -webkit-body;"></p>
 </form>
 </div>
-<p style="text-align:center; font-size: 14px; font-weight: 100"> The cats will miss you :( </p>
+<p style="text-align:center; font-size: 14px; font-weight: 100"> You will no longer recieve daily snapcats </p>
 <p style="text-align:center; font-weight:100; font-size: 14px;"> <a href="/about"> Return Home</a></p>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
