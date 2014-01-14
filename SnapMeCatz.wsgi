@@ -12,7 +12,6 @@ import getpass
 import urllib
 import pickle
 
-
 #urls = pickle.load( open('urls.p', 'rb'))
 
 @get('/')
@@ -42,16 +41,16 @@ def send():
         media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
         s.send(media_id, recipient)
 
-        return template(Templates/sent.tpl)
+        return template('Templates/sent')
 
 @get('/about')
 def about():
-        return template(Templates/about.tpl)
+        return template('Templates/about')
 
 from bottle import error
 @error(404)
 def error404(error):
-    return template(Templates/404.tpl)
+    return template('Templates/404')
 
 
 # Do NOT use bottle.run() with mod_wsgi

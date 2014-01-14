@@ -10,6 +10,10 @@ body{
         font-weight: 100;
         text-align: center;
 }
+img {
+	border: 2px solid;
+	border-radius: 20px;
+}
 A {color:black}
 A:visited {color: black}
 A:active {text-decoration: none}
