@@ -4,6 +4,8 @@ import os
 os.chdir(os.path.dirname(__file__))
 sys.path.append('/var/www/SnapMeCatz')
 
+
+
 import bottle
 # ... build or import your bottle application here ...
 from bottle import get, post, request, run, default_app, template

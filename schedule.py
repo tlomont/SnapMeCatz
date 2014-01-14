@@ -15,7 +15,8 @@ s.login(name, password)
 #Get list of friends
 update=s.get_updates()
 for a in ((update['updates_response'])['friends']):
-	friends+=a['name']+','
+	if (a['type']==1 or a['type']==0):
+		friends+=a['name']+','
 
 
 #Get urls of images

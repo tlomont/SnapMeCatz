@@ -21,7 +21,7 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 <p><form name="input" action="/unsubscribe" method="post">
 Snapchat Username: 
 <input type="text" name="username" style="border: 2px solid rgb(139, 188, 190); border-radius:5px"></p>
-<input type="submit" value="SnapCat!" style="
+<input type="submit" value="Unsubscribe" style="
 padding: 5px 15px 5px !important; 
 font-size: 14px !important; 
 background-color: rgb(139, 188, 190); font-weight: bold; 
