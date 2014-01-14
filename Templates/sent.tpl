@@ -17,7 +17,7 @@ A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
 <body>
 <div style="margin:20px auto; text-align:center; width:400px; height: 165px">
 <h1 style="font-weight: 200"> SnapCat sent!</h1>
-<p style="text-align:center; font-size: 14px; font-weight: 100"> You will also recieve daily Snapcats from us! Click <a href="../unsubscribe">here</a> to unsubscribe</p>
+<p style="text-align:center; font-size: 14px; font-weight: 100"> You will also receive daily Snapcats from us! Click <a href="../unsubscribe">here</a> to unsubscribe</p>
 <div>
 <p style="font-weight:100"> <a href="../">Return Home</a></p>
 <script>
