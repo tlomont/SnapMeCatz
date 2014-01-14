@@ -3,14 +3,31 @@ import getpass
 import urllib
 import pickle
 
+
+friends=''
+
+#login to snapchat
+name = 'snapmecatz'
+password = 'fuckyoni'
+s = Snapchat()
+s.login(name, password)
+
+#Get list of friends
+update=s.get_updates()
+for a in ((update['updates_response'])['friends']):
+	friends+=a['name']+','
+
+
+#Get urls of images
 urls = pickle.load( open('urls.p', 'rb'))
 
+#choose url
 from random import choice
 url_final = choice(urls)
 while(".gif" in url_final):
         url_final = choice(urls)
-with open ("php/friends.txt", "r") as myfile:
-	friends=myfile.read()
+
+#Get snapchat ready
 name = 'snapmecatz'
 password = 'fuckyoni'
 recipient = friends
