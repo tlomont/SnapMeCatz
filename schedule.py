@@ -15,7 +15,7 @@ s.login(name, password)
 #Get list of friends
 update=s.get_updates()
 for a in ((update['updates_response'])['friends']):
-	if (a['type']==1 or a['type']==0):
+	if (a['type']==0):
 		friends+=a['name']+','
 
 

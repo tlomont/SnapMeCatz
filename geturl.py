@@ -52,4 +52,4 @@ if __name__ == "__main__":
                 a.append(elem['href'])
                 #print elem['href']
 
-pickle.dump(a, open( "urls.p", "wb" ))
+pickle.dump(a, open( "/var/www/SnapMeCatz/urls.p", "wb" ))
