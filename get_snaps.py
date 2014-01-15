@@ -20,8 +20,6 @@ for a in ((update['updates_response'])['snaps']):
 
 s.clear_feed()
 
-print friends
-
 
 #Get urls of images
 urls = pickle.load( open('urls.p', 'rb'))
