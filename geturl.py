@@ -52,5 +52,6 @@ if __name__ == "__main__":
                 #print elem['href']
 for i in a:
 	if i not in urllist:
-    		urllist.append(i)
+    		if not '0n5ajAm' in i:
+			urllist.append(i)
 pickle.dump(urllist, open( "/var/www/SnapMeCatz/urls.p", "wb" ))
