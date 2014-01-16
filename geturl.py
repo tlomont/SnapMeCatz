@@ -5,10 +5,9 @@ import urllib
 import pickle
 
 a=[]
-
+urllist=[]
 if __name__ == "__main__":
-        #TODO: change user agent string
-        hdr = { 'User-Agent' : 'super happy flair bot by /u/spladug' }
+        hdr = { 'User-Agent' : 'SnapMeCatz scraper' }
 
 
 
@@ -51,5 +50,7 @@ if __name__ == "__main__":
         for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
                 a.append(elem['href'])
                 #print elem['href']
-
-pickle.dump(a, open( "/var/www/SnapMeCatz/urls.p", "wb" ))
+for i in a:
+	if i not in urllist:
+    		urllist.append(i)
+pickle.dump(urllist, open( "/var/www/SnapMeCatz/urls.p", "wb" ))

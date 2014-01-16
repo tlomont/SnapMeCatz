@@ -13,7 +13,7 @@ import getpass
 import urllib
 import pickle
 
-bottle.TEMPLATES.clear()
+#bottle.TEMPLATES.clear()
 
 #urls = pickle.load( open('urls.p', 'rb'))
 
