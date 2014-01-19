@@ -4,7 +4,7 @@ import urllib
 import pickle
 
 
-friends=''
+friends_list=''
 
 #login to snapchat
 name = 'snapmecatz'
@@ -16,11 +16,11 @@ s.login(name, password)
 update=s.get_updates()
 for a in ((update['updates_response'])['friends']):
 	if (a['type']==0):
-		friends+=a['name']+','
+		friends_list+=a['name']+','
 
 
 #Get urls of images
-urls = pickle.load( open('urls.p', 'rb'))
+urls = pickle.load( open('/var/www/SnapMeCatz/urls.p', 'rb'))
 
 #choose url
 from random import choice
@@ -31,9 +31,9 @@ while(".gif" in url_final):
 #Get snapchat ready
 name = 'snapmecatz'
 password = 'fuckyoni'
-recipient = friends
-urllib.urlretrieve(url_final, "1.jpg")
-pic = "1.jpg"
+recipient = friends_list
+urllib.urlretrieve(url_final, "/var/www/SnapMeCatz/1.jpg")
+pic = "/var/www/SnapMeCatz/1.jpg"
 s = Snapchat()
 s.login(name, password)
 
