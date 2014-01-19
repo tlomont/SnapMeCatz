@@ -19,7 +19,7 @@ import pickle
 
 @get('/')
 def index():
-        return template('Templates/index')
+        return template('Templates/down')
 
 @post('/')
 def send():
