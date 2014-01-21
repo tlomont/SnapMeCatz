@@ -30,7 +30,7 @@ name = 'snapmefood'
 password = 'fuckyoni'
 recipient = 'plowcity,xoxuewei'
 urllib.urlretrieve(url_final, "food.jpg")
-pic = "/var/www/SnapMeCatz/food.jpg"
+pic = "food.jpg"
 s = Snapchat()
 s.login(name, password)
 

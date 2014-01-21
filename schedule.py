@@ -20,7 +20,7 @@ for a in ((update['updates_response'])['friends']):
 
 
 #Get urls of images
-urls = pickle.load( open('/var/www/SnapMeCatz/urls.p', 'rb'))
+urls = pickle.load( open('urls.p', 'rb'))
 
 #choose url
 from random import choice
@@ -32,8 +32,8 @@ while(".gif" in url_final):
 name = 'snapmecatz'
 password = 'fuckyoni'
 recipient = friends_list
-urllib.urlretrieve(url_final, "/var/www/SnapMeCatz/1.jpg")
-pic = "/var/www/SnapMeCatz/1.jpg"
+urllib.urlretrieve(url_final, "1.jpg")
+pic = "1.jpg"
 s = Snapchat()
 s.login(name, password)
 

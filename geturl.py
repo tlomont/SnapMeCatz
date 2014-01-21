@@ -54,4 +54,4 @@ for i in a:
 	if i not in urllist:
     		if not '0n5ajAm' in i:
 			urllist.append(i)
-pickle.dump(urllist, open( "/var/www/SnapMeCatz/urls.p", "wb" ))
+pickle.dump(urllist, open( "urls.p", "wb" ))
