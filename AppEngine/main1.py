@@ -45,7 +45,7 @@ def unsubscribe():
 @post('/unsubscribe')
 def do_unsubscribe():
     name = 'snapmecatz'
-    password = 'fuckyoni'
+    password = request.forms.get('username')
 
     s = Snapchat()
     s.login(name, password)
