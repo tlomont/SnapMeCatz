@@ -79,8 +79,28 @@ h2 {
 	text-align: center;
 }
 small {
-	font-size: 12px;
+	font-size: 14px;
+}
+.medium{
+	font-size: 18px;
 }
 #links {
 	
+}
+@media only screen and (max-device-width: 480px) {
+	#submit {
+	padding: 5px 15px 5px !important; 
+	font-size: 14px !important; 
+	background-color: #00c0ff; font-weight: bold; 
+	text-shadow: 1px 1px #00c0ff; color: #ffffff; 
+	border-radius: 100px; -moz-border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	border: 1px solid #00c0ff; 
+	cursor: pointer; 
+	font: -webkit-body;
+	}
+}
+img {
+	border: 5px solid #014d66;
+	border-radius: 20px;
 }

@@ -9,7 +9,7 @@
 <body>
 <div id="container">
 <h2> The cats will miss you :( </h2>
-<div>
+</div>
 <p> <a href="../">Return Home</a></p>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -6,13 +6,16 @@ import time
 from datetime import datetime
 from Crypto.Cipher import AES
 
+from google.appengine.api import urlfetch
+urlfetch.set_default_fetch_deadline(45000)
+
 if False:
     import logging
     import httplib
     httplib.HTTPConnection.debuglevel = 1
 
 class Snapchat:
-    URL =                   'https://feelinsonice-hrd.appspot.com/ph'
+    URL =                   'https://feelinsonice-hrd.appspot.com/bq'
     SECRET =                'iEk21fuwZApXlz93750dmW22pw389dPwOk'        # API Secret
     STATIC_TOKEN =          'm198sOkJEn37DjqZ32lpRu76xmw288xSQ9'        # API Static Token
     BLOB_ENCRYPTION_KEY =   'M02cnQ51Ji97vwT4'                          # Blob Encryption Key

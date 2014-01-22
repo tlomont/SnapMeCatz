@@ -9,11 +9,11 @@
 <body>
 <h2>About</h2>
 <div id="container">
-<p> Get daily Snapchats of cute cats straight to your phone! </p>
+<p class="medium"> Get daily Snapchats of cute cats straight to your phone! </p>
 <p><small> Created by Ben Haines, Tommy Lomont, and Waleed Malik<small> </p>
 
 </div>
-<p style= "text-align: center; font-weight: 100"> <a href="../">Return Home</a></p>
+<p class="medium"> <a href="../">Return Home</a></p>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
