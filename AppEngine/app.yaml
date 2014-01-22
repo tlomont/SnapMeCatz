@@ -4,8 +4,8 @@ runtime: python27
 api_version: 1
 threadsafe: false
 handlers:
-- url: /styles
-  static_dir: styles
+- url: /Styles
+  static_dir: Styles
  
 - url: /.*
   script: main1.py

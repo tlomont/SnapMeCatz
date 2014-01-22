@@ -1,0 +1,86 @@
+body{
+    font-family:  helvetica, "Tahoma";
+    font-weight: 100;
+    background-color: #EEEEEE;
+}
+
+A {
+	color:#014d66;
+}
+
+A:visited {
+	color: #014d66;
+}
+
+A:active {
+	text-decoration: none
+}
+
+A:hover {
+	text-decoration: underline; 
+	color: #00c0ff;
+}
+
+#container {
+	margin:20px auto; 
+	text-align:center; 
+}
+#username {
+	border: 2px solid #00c0ff; 
+	border-radius: 10px;
+	font-size: 26px;
+	font-family: helvetica, "Tahoma";
+	padding: 5px;
+	text-align: center;
+}
+
+#submit {
+	padding: 5px 15px 5px !important; 
+	font-size: 14px !important; 
+	background-color: #00c0ff; font-weight: bold; 
+	text-shadow: 1px 1px #00c0ff; color: #ffffff; 
+	border-radius: 100px; -moz-border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	border: 1px solid #00c0ff; 
+	cursor: pointer; 
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	font: -webkit-body;
+}
+p {
+	font-size:14px;
+	font-weight: 100;
+	text-align: center;
+	color: #014d66;
+}
+h1 {
+	font-size: 72px;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	color: #014d66;
+	margin: 0.6em 0 0.2em 0em;
+}
+#em {
+	color: #00c0ff;
+}
+h2 {
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	color: #014d66;
+	margin: 0.6em 0 0.2em 0em;
+}
+#unsubUser {
+	border: 2px solid #00c0ff; 
+	border-radius: 10px;
+	font-size: 18px;
+	font-family: helvetica, "Tahoma";
+	padding: 5px;
+	text-align: center;
+}
+small {
+	font-size: 12px;
+}
+#links {
+	
+}

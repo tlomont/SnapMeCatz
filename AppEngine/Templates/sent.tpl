@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<html style=" background-color: #E7E7E7;" >
+<html>
 <head>
-<title> SnapMeCatz! </title>
+<title> SnapMeCatz! | Subscribed!</title>
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQARABEAAAEQEAABARAAARAQAAEBEAAAEQAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDwAAwAMAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACBgQAAwYMAAMPDAADDwwAA5+cAAOfnAADv9wAA" rel="icon" type="image/x-icon" />
-<style type="text/css">
-body{
-        font-family:  helvetica, "Tahoma";
-        font-weight: 100;
-}
-A {color:black}
-A:visited {color: black}
-A:active {text-decoration: none}
-A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
-</style>
+<link rel="stylesheet" type="text/css" href="/Styles/index.css">
+<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div style="margin:20px auto; text-align:center; width:400px; height: 165px">
-<h1 style="font-weight: 200"> SnapCat sent!</h1>
-<p style="text-align:center; font-size: 14px; font-weight: 100"> You will also receive daily Snapcats from us! Click <a href="../unsubscribe">here</a> to unsubscribe</p>
+<h1> Subscribed!</h1>
+<p> You will now receive daily Snapcats from us! Click <a href="../unsubscribe">here</a> to unsubscribe</p>
 <div>
-<p style="font-weight:100"> <a href="../">Return Home</a></p>
+<p> <a href="../">Return Home</a></p>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

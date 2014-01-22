@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html style=" background-color: #E7E7E7;" >
+<html>
 <head>
 <title> SnapMeCatz! | About </title>
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQARABEAAAEQEAABARAAARAQAAEBEAAAEQAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDwAAwAMAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACBgQAAwYMAAMPDAADDwwAA5+cAAOfnAADv9wAA" rel="icon" type="image/x-icon" />
-<style type="text/css">
-body{
-        font-weight: 100;
-        font-family:  helvetica, "Tahoma"
-}
-A {color:black}
-A:visited {color: black}
-A:active {text-decoration: none}
-A:hover {text-decoration: underline; color: rgb(139, 188, 190);}
-</style>
+<link rel='stylesheet' type="text/css" href="/Styles/index.css">
+<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div style="margin:20px auto; text-align:center; width:400px; height: 165px; border:2px solid; border-radius:20px; background-color: white">
-<h1 style="font-weight:200"> About </h1>
-<p> Send snapchats of random cats to you or your friends! </p>
-<p style="font-size: 12px; margin-top: 10px; font-weight:100"> Created by Ben Haines, Tommy Lomont, and Waleed Malik </P>
+<h2>About</h2>
+<div id="container">
+<p> Get daily Snapchats of cute cats straight to your phone! </p>
+<p><small> Created by Ben Haines, Tommy Lomont, and Waleed Malik<small> </p>
 
 </div>
 <p style= "text-align: center; font-weight: 100"> <a href="../">Return Home</a></p>

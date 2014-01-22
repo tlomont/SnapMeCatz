@@ -12,7 +12,7 @@ if False:
     httplib.HTTPConnection.debuglevel = 1
 
 class Snapchat:
-    URL =                   'https://feelinsonice-hrd.appspot.com/bq'
+    URL =                   'https://feelinsonice-hrd.appspot.com/ph'
     SECRET =                'iEk21fuwZApXlz93750dmW22pw389dPwOk'        # API Secret
     STATIC_TOKEN =          'm198sOkJEn37DjqZ32lpRu76xmw288xSQ9'        # API Static Token
     BLOB_ENCRYPTION_KEY =   'M02cnQ51Ji97vwT4'                          # Blob Encryption Key
@@ -513,6 +513,26 @@ class Snapchat:
             'username': self.username,
             'timestamp': timestamp,
             'action':'delete',
+            'friend':person
+            
+        }
+
+        params = [
+            self.auth_token,
+            timestamp
+        ]
+
+        result = self.post('/friend', data, params)
+    def add_friend(self, person):
+
+        if not self.logged_in:
+            return False
+
+        timestamp = self._timestamp()
+        data = {
+            'username': self.username,
+            'timestamp': timestamp,
+            'action':'add',
             'friend':person
             
         }

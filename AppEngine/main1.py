@@ -7,50 +7,45 @@ from snapchat import Snapchat
 
 @get('/')
 def index():
-        return template('Templates/index')
+    return template('Templates/index')
 
 @post('/')
 def send():
-        urls = pickle.load( open('urls.p', 'rb'))
-        from random import choice
-        url_final = choice(urls)
-        while(".gif" in url_final):
-                url_final = choice(urls)
-        name = 'snapmecatz'
-        password = 'fuckyoni'
-        recipient = request.forms.get('username')
-        urllib.urlretrieve(url_final, "1.jpg")
-        pic = "1.jpg"
-        s = Snapchat()
-        s.login(name, password)
+    name = 'snapmecatz'
+    password = 'fuckyoni'
 
-        #add username to file
-        #f = open('username.txt','a')
-        #f.write(recipient+'\n')
+    s = Snapchat()
+    s.login(name, password)
 
-        # Send a snapchat
-        media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
-        s.send(media_id, recipient)
+    s.add_friend(request.forms.get('username'))
 
-        return template('Templates/sent')
+    return template('Templates/sent')
 
 @get('/about')
 def about():
-        return template('Templates/about')
+    return template('Templates/about')
+
+@get('/sent')
+def sent():
+    return template('Templates/sent')
 
 @get('/unsubscribe')
 def unsubscribe():
     return template('Templates/unsubscribe')
 
+@get('/unsubscribed')
+def unsubscribe():
+    return template('Templates/unsubscribed')
+
 @post('/unsubscribe')
 def do_unsubscribe():
     name = 'snapmecatz'
-    password = request.forms.get('username')
+    password = 'fuckyoni'
 
     s = Snapchat()
     s.login(name, password)
 
-    s.delete_friend('plowcity')
+    s.delete_friend(request.forms.get('username'))
     return template('Templates/unsubscribed')
 
 @error(404)
