@@ -197,14 +197,18 @@ class Snapchat:
 
         result = self.post('/login', data, params)
 
-        if 'auth_token' in result:
-            self.auth_token = result['auth_token']
+        if type(result) is bool:
+            return result
 
-        if 'username' in result:
-            self.username = result['username']
+        else:    
+            if 'auth_token' in result:
+                self.auth_token = result['auth_token']
 
-        if self.auth_token and self.username:
-            self.logged_in = True
+            if 'username' in result:
+                self.username = result['username']
+
+            if self.auth_token and self.username:
+                self.logged_in = True
 
         return result
 
@@ -509,7 +513,18 @@ class Snapchat:
     def delete_friend(self, person):
 
         if not self.logged_in:
-            return False
+            
+            from google.appengine.api import mail
+
+            message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                        subject=("Unsubscribe "+person))
+
+            message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+            message.body = person
+ 
+
+            message.send()
 
         timestamp = self._timestamp()
         data = {
@@ -529,7 +544,17 @@ class Snapchat:
     def add_friend(self, person):
 
         if not self.logged_in:
-            return False
+            from google.appengine.api import mail
+
+            message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                        subject=("Subscriber "+person))
+
+            message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+            message.body = person
+ 
+
+            message.send()
 
         timestamp = self._timestamp()
         data = {

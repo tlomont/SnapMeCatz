@@ -15,8 +15,9 @@
 <p><input type="submit" id="submit" value="Subscribe!"></p>
 </form>
 </div>
-<p> Make sure to accept SnapMeCatz as a friend!</p>
-<div id="links"><p> <a href="/about">About</a> | <a href="/unsubscribe">Unsubscribe</a></p><div>
+<p> Get daily Snapchats of cute cats straight to your phone! </p>
+<div id="links"><p> <a href="/about">About</a> | <a href="/unsubscribe">Unsubscribe</a></p><p><a href="https://twitter.com/share" class="twitter-share-button" data-text="SnapMeCatz!" data-via="SnapMeCatz" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

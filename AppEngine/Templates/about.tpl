@@ -9,7 +9,7 @@
 <body>
 <h2>About</h2>
 <div id="container">
-<p class="medium"> Get daily Snapchats of cute cats straight to your phone! </p>
+<p class="medium"> SnapMeCatz will send you Snapchats of cute cats daily! </p><p class="medium"> Just enter your Snapchat username and accept our friend request! </p>
 <p><small> Created by Ben Haines, Tommy Lomont, and Waleed Malik<small> </p>
 
 </div>

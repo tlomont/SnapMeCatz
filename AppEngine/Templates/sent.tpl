@@ -9,7 +9,7 @@
 <body>
 <div style="margin:20px auto; text-align:center; width:400px; height: 165px">
 <h1> Subscribed!</h1>
-<p> You will now receive daily Snapcats from us! Click <a href="../unsubscribe">here</a> to unsubscribe</p>
+<p> You will now receive daily Snapcats from us! Make sure to accept SnapMeCatz as a friend!</p>
 <div>
 <p> <a href="../">Return Home</a></p>
 <script>
