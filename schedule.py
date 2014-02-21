@@ -1,10 +1,11 @@
 from snapchat import Snapchat
+import geturl
 import getpass
 import urllib
 import pickle
 
 
-friends_list=''
+friends =''
 
 #login to snapchat
 name = 'snapmecatz'
@@ -14,12 +15,13 @@ s.login(name, password)
 
 #Get list of friends
 update=s.get_updates()
-for a in ((update['updates_response'])['friends']):
-	if (a['type']==0):
-		friends_list+=a['name']+','
+for a in (update['friends']):
+    if (a['type']==0):
+        friends+=a['name']+','
 
 
 #Get urls of images
+geturl.get_url()
 urls = pickle.load( open('urls.p', 'rb'))
 
 #choose url
@@ -31,7 +33,7 @@ while(".gif" in url_final):
 #Get snapchat ready
 name = 'snapmecatz'
 password = 'fuckyoni'
-recipient = friends_list
+recipient = friends
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"
 s = Snapchat()

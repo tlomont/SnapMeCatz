@@ -12,7 +12,7 @@ if False:
     httplib.HTTPConnection.debuglevel = 1
 
 class Snapchat:
-    URL =                   'https://feelinsonice-hrd.appspot.com/bq'
+    URL =                   'https://feelinsonice.appspot.com/bq'
     SECRET =                'iEk21fuwZApXlz93750dmW22pw389dPwOk'        # API Secret
     STATIC_TOKEN =          'm198sOkJEn37DjqZ32lpRu76xmw288xSQ9'        # API Static Token
     BLOB_ENCRYPTION_KEY =   'M02cnQ51Ji97vwT4'                          # Blob Encryption Key
@@ -377,7 +377,7 @@ class Snapchat:
             timestamp
         ]
 
-        result = self.post('/all_updates', data, params)
+        result = self.post('/updates', data, params)
         return result
 
     def get_snaps(self):
@@ -503,6 +503,7 @@ class Snapchat:
             return True
 
         return False
+
     def delete_friend(self, person):
 
         if not self.logged_in:
