@@ -5,6 +5,7 @@
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQARABEAAAEQEAABARAAARAQAAEBEAAAEQAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDwAAwAMAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACBgQAAwYMAAMPDAADDwwAA5+cAAOfnAADv9wAA" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="/Styles/index.css">
 <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content= "width=device-width, initial-scale=1">
 </head>
 <body>
 <div style="margin:20px auto; text-align:center; width:400px; height: 165px">

@@ -1,7 +1,9 @@
-body{
+body {
+	margin:0; padding:0; border:0;
     font-family:  helvetica, "Tahoma";
     font-weight: 100;
     background-color: #EEEEEE;
+    width: 100%;
 }
 
 A {
@@ -86,10 +88,25 @@ small {
 	font-size: 18px;
 }
 #links {
-	
+	text-align: center;
 }
 }
 img {
 	border: 5px solid #014d66;
 	border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 2.3em;
+	}
+	#username {
+		font-size: 1.2em;
+	}
+	#submit {
+		font-size: 1em;
+	}
 }

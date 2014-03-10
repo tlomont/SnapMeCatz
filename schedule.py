@@ -5,7 +5,7 @@ import urllib
 import pickle
 
 
-friends =''
+friends = friends2 =''
 
 #login to snapchat
 name = 'snapmecatz'
@@ -14,10 +14,15 @@ s = Snapchat()
 s.login(name, password)
 
 #Get list of friends
+count = 0
 update=s.get_updates()
 for a in (update['friends']):
     if (a['type']==0):
-        friends+=a['name']+','
+        if (count < 400):
+            friends+=a['name']+','
+        else:
+            friends2+=a['name']+','
+        count+=1
 
 
 #Get urls of images
@@ -40,5 +45,10 @@ s = Snapchat()
 s.login(name, password)
 
 # Send a snapchat
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+#send second group
+recipient = friends2
 media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 s.send(media_id, recipient)

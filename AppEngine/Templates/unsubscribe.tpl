@@ -6,6 +6,7 @@
 <meta name="description" content="Snapchat pictures of cats to you or your friends with SnapMeCatz!">
 <link rel='stylesheet' type="text/css" href="/Styles/index.css">
 <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+<meta name="viewport" content= "width=device-width, initial-scale=1">
 </head>
 <body>
 <h2>Unsubscribe</h2>
