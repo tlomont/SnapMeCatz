@@ -27,6 +27,7 @@ s.login(name, password)
 
 
 #Get list of friends and send for every 100
+friends = ''
 count = 0
 update=s.get_updates()
 for a in (update['friends']):
