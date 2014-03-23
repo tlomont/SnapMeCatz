@@ -5,7 +5,7 @@ import urllib
 import pickle
 
 
-friends = friends2 =''
+friends = friends2 = friends3 = friends4 = friends5 = friends6 = friends7 = friends8 = friends9 = ''
 
 #login to snapchat
 name = 'snapmecatz'
@@ -18,10 +18,24 @@ count = 0
 update=s.get_updates()
 for a in (update['friends']):
     if (a['type']==0):
-        if (count < 410):
+        if (count < 100):
             friends+=a['name']+','
-        else:
+        elif (count < 200):
             friends2+=a['name']+','
+        elif (count < 300):
+            friends3+=a['name']+','
+        elif (count < 400):
+            friends4+=a['name']+','
+        elif (count < 500):
+            friends5+=a['name']+','
+        elif (count < 600):
+            friends6+=a['name']+','
+        elif (count < 700):
+            friends7+=a['name']+','
+        elif (count < 800):
+            friends8+=a['name']+','
+        else:
+            friends9+=a['name']+','
         count+=1
 
 
@@ -50,5 +64,33 @@ s.send(media_id, recipient)
 
 #send second group
 recipient = friends2
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends3
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends4
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends5
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends6
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends7
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends8
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, recipient)
+
+recipient = friends9
 media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 s.send(media_id, recipient)
