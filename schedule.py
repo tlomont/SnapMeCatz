@@ -18,7 +18,7 @@ count = 0
 update=s.get_updates()
 for a in (update['friends']):
     if (a['type']==0):
-        if (count < 400):
+        if (count < 410):
             friends+=a['name']+','
         else:
             friends2+=a['name']+','
