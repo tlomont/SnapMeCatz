@@ -19,7 +19,6 @@ while(".gif" in url_final):
 #Get snapchat ready
 name = 'snapmecatz'
 password = 'fuckyoni'
-recipient = friends
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"
 s = Snapchat()
@@ -35,7 +34,10 @@ for a in (update['friends']):
         friends+=a['name']+','
         if (count > 99):
             media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
-            s.send(media_id, recipient)
+            s.send(media_id, friends)
             count = 0
             friends = ''
         count+=1
+
+media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+s.send(media_id, friends)
