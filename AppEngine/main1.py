@@ -4,6 +4,9 @@ from Framework.bottle import route, run, template, request, error, debug, get, p
 import pickle
 import urllib
 from snapchat import Snapchat
+from google.appengine.runtime import apiproxy_errors
+from google.appengine.api import mail
+
 
 @get('/')
 def index():
@@ -15,9 +18,30 @@ def send():
     password = 'fuckyoni'
 
     s = Snapchat()
-    s.login(name, password)
+    try:
+        s.login(name, password)
+    except:
+        message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                    subject=("Subscriber "+request.forms.get('username')))
 
-    s.add_friend(request.forms.get('username'))
+        message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+        message.body = request.forms.get('username')
+
+        message.send()
+
+    try:
+        s.add_friend(request.forms.get('username'))
+    except:
+        message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                    subject=("Subscriber "+request.forms.get('username')))
+
+        message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+        message.body = request.forms.get('username')
+
+        message.send()
+
 
     return template('Templates/sent')
 
@@ -43,9 +67,30 @@ def do_unsubscribe():
     password = 'fuckyoni'
 
     s = Snapchat()
-    s.login(name, password)
+    try:
+        s.login(name, password)
+    except:
+        message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                    subject=("Unsubscribe "+request.forms.get('username')))
 
-    s.delete_friend(request.forms.get('username'))
+        message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+        message.body = request.forms.get('username')
+
+        message.send()
+
+    try:
+        s.delete_friend(request.forms.get('username'))
+    except:
+        message = mail.EmailMessage(sender="SnapMeCatz <tommy.lomont@gmail.com>",
+                                    subject=("Unsubscribe "+request.forms.get('username')))
+
+        message.to = "SnapMeCatz <snapmecatz1@gmail.com>"
+
+        message.body = request.forms.get('username')
+
+        message.send()
+
     return template('Templates/unsubscribed')
 
 @error(404)
