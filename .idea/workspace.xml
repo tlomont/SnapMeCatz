@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9543c06-fedf-4618-a15b-f3f90eefbc45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppEngine/Styles/index.css" afterPath="$PROJECT_DIR$/AppEngine/Styles/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppEngine/main1.py" afterPath="$PROJECT_DIR$/AppEngine/main1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.py" afterPath="$PROJECT_DIR$/schedule.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppEngine/snapchat.py" afterPath="$PROJECT_DIR$/AppEngine/snapchat.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geturl.py" afterPath="$PROJECT_DIR$/geturl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.p" afterPath="$PROJECT_DIR$/urls.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SnapMeCatz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,19 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schedule.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="schedule.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.18620689" vertical-offset="0" max-vertical-offset="725">
+            <state line="13" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geturl.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="geturl.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geturl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="735">
+            <state line="33" column="56" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -58,7 +57,7 @@
       <file leaf-file-name="snapchat.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AppEngine/snapchat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="90" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8550">
+            <state line="19" column="90" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="8670">
               <folding />
             </state>
           </provider>
@@ -89,6 +88,7 @@
         <option value="$PROJECT_DIR$/AppEngine/main1.py" />
         <option value="$PROJECT_DIR$/AppEngine/Styles/index.css" />
         <option value="$PROJECT_DIR$/AppEngine/snapchat.py" />
+        <option value="$PROJECT_DIR$/geturl.py" />
       </list>
     </option>
   </component>
@@ -217,9 +217,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,6 +238,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -296,7 +296,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -342,18 +342,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
+    <entry file="file://$PROJECT_DIR$/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
+        <state line="13" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
+    <entry file="file://$PROJECT_DIR$/geturl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+        <state line="42" column="0" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="795">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppEngine/snapchat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="90" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="8670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppEngine/Styles/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="37" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppEngine/main1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="36" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule.py">
@@ -393,16 +424,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule.py">
@@ -442,16 +469,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule.py">
@@ -484,16 +507,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule.py">
@@ -526,28 +545,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="36" column="14" selection-start="669" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/geturl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppEngine/Styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="37" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geturl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
@@ -561,7 +569,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.18620689" vertical-offset="0" max-vertical-offset="725">
+        <state line="13" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geturl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="56" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>

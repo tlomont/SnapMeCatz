@@ -15,7 +15,7 @@ def get_url():
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
-        for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
+        for elem in soup.findAll('a', href=re.compile('i\.imgur\.com/[a-zA-Z0-9]')):
                 a.append(elem['href'])
                 #print elem['href']
 
@@ -23,7 +23,7 @@ def get_url():
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
-        for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
+        for elem in soup.findAll('a', href=re.compile('i\.imgur\.com/[a-zA-Z0-9]')):
                 a.append(elem['href'])
                 #print elem['href']
 
@@ -31,7 +31,7 @@ def get_url():
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
-        for elem in soup.findAll('a', href=re.compile('\.imgur\.com/[a-zA-Z0-9]')):
+        for elem in soup.findAll('a', href=re.compile('i\.imgur\.com/[a-zA-Z0-9]')):
             a.append(elem['href'])
             #print elem['href']
 
