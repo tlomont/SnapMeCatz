@@ -1,7 +1,9 @@
+
 body {
 	margin:0; padding:0; border:0;
     font-family:  helvetica, "Tahoma";
     font-weight: 100;
+    background-image:url('../Images/squairy_light.png');
     background-color: #EEEEEE;
     width: 100%;
 }
