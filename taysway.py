@@ -39,14 +39,15 @@ while(".gif" in url_final):
 
 # #Get snapchat ready
 name = 'snapmeswift'
-password = 'fuckyoni'
-recipient = 'plowcity,ntav11'
-urllib.urlretrieve(url_final, "taysway.jpg")
-pic = "taysway.jpg"
+password = $password
+recipient = 'tlomont,ntav11'
+urllib.urlretrieve(url_final, "/var/www/SnapMeCatz/taysway.jpg")
+pic = "/var/www/SnapMeCatz/taysway.jpg"
 s = Snapchat()
 s.login(name, password)
 
 # Send a snapchat
 media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
-s.send(media_id, recipient)
+print media_id
+print s.send(media_id, recipient)
 

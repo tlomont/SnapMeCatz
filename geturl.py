@@ -11,7 +11,7 @@ def get_url():
         hdr = { 'User-Agent' : 'SnapMeCatz scraper' }
 
 
-        url = 'http://www.reddit.com/r/cats/top/'
+        url = 'http://www.reddit.com/r/cats/top?limit=5'
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
@@ -19,21 +19,13 @@ def get_url():
                 a.append(elem['href'])
                 #print elem['href']
 
-        url = 'http://www.reddit.com/r/catpictures/?count=25'
+        url = 'http://www.reddit.com/r/catpictures/top?limit=5'
         conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
         html = conn.read()
         soup = BeautifulSoup(html)
         for elem in soup.findAll('a', href=re.compile('i\.imgur\.com/[a-zA-Z0-9]')):
                 a.append(elem['href'])
                 #print elem['href']
-
-        url = 'http://www.reddit.com/r/kittens/top/?sort=top&t=week'
-        conn = urllib2.urlopen(urllib2.Request(url, headers=hdr))
-        html = conn.read()
-        soup = BeautifulSoup(html)
-        for elem in soup.findAll('a', href=re.compile('i\.imgur\.com/[a-zA-Z0-9]')):
-            a.append(elem['href'])
-            #print elem['href']
 
 
         for i in a:
