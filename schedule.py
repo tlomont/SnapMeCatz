@@ -3,6 +3,7 @@ import geturl
 import getpass
 import urllib
 import pickle
+import os
 
 #Get urls of images
 geturl.get_url()
@@ -16,7 +17,7 @@ while(".gif" in url_final):
 
 #Get snapchat ready
 name = 'snapmecatz'
-password = $password
+password = os.environ.get('SNAPMECATZ')
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"
 s = Snapchat()

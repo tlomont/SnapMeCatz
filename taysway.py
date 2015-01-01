@@ -5,6 +5,7 @@ import urllib
 import re
 import urllib2
 from bs4 import BeautifulSoup
+import os
 
 a=[]
 hdr = { 'User-Agent' : 'super happy flair bot by /u/spladug' }
@@ -39,7 +40,7 @@ while(".gif" in url_final):
 
 # #Get snapchat ready
 name = 'snapmeswift'
-password = $password
+password = os.environ.get('SNAPMESWIFT')
 recipient = 'tlomont,ntav11'
 urllib.urlretrieve(url_final, "/var/www/SnapMeCatz/taysway.jpg")
 pic = "/var/www/SnapMeCatz/taysway.jpg"
