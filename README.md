@@ -1,5 +1,5 @@
 #README
 
-Spin-off of our other app, SnapCatz
+Sends users Snapchats of cute cats daily!
 
-Sends any snapchat user pictures of cats
+Using Reddit API for the cat pictures and the Bottle framework on AppEngine for the web front
