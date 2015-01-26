@@ -6,7 +6,7 @@ import getpass
 friends=''
 
 name = 'snapmecatz'
-password = 'fuckyoni'
+password = os.environ.get('SNAPMECATZ')
 
 s = Snapchat()
 s.login(name, password)
@@ -32,7 +32,7 @@ while(".gif" in url_final):
 
 #Get snapchat ready
 name = 'snapmecatz'
-password = 'fuckyoni'
+password = os.environ.get('SNAPMECATZ')
 recipient = friends
 urllib.urlretrieve(url_final, "1.jpg")
 pic = "1.jpg"

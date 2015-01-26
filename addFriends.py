@@ -2,7 +2,7 @@ from snapchat import Snapchat
 
 #Get snapchat ready
 name = 'snapmecatz'
-password = 'fuckyoni'
+password = os.environ.get('SNAPMECATZ')
 s = Snapchat()
 s.login(name, password)
 
