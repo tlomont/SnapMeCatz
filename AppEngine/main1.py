@@ -15,7 +15,7 @@ def index():
 @post('/')
 def send():
     name = 'snapmecatz'
-    password = 'fuckyoni'
+    password = ''
 
     s = Snapchat()
     try:
