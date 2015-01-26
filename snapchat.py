@@ -18,8 +18,8 @@ class Snapchat:
     STATIC_TOKEN =          'm198sOkJEn37DjqZ32lpRu76xmw288xSQ9'        # API Static Token
     BLOB_ENCRYPTION_KEY =   'M02cnQ51Ji97vwT4'                          # Blob Encryption Key
     HASH_PATTERN =          '0001110111101110001111010101111011010001001110011000110001000110'; # Hash pattern
-    USERAGENT =             'Snapchat/8.1.1 (Nexus 5; Android 21; gzip)'  # The default useragent
-    SNAPCHAT_VERSION =      '4.0.0'                                     # Snapchat Application Version
+    USERAGENT =             'Snapchat/8.0.1.3 (Nexus 5; Android 21; gzip)'  # The default useragent
+    SNAPCHAT_VERSION =      'Snapcaht/8.0.1.3'                                     # Snapchat Application Version
 
     MEDIA_IMAGE =                        0  # Media: Image
     MEDIA_VIDEO =                        1  # Media: Video

@@ -27,7 +27,6 @@ s.login(name, password)
 friends = ''
 count = 0
 update=s.get_updates()
-media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 for a in (update['friends']):
     if (a['type']==0):
         friends+=a['name']+','
