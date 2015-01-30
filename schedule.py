@@ -31,10 +31,19 @@ for a in (update['friends']):
     if (a['type']==0):
         friends+=a['name']+','
         if (count > 99):
-            media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+            try:
+                media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+            # login again if necessary
+            except:
+                s.login(name, password)
+                media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 	    s.send(media_id, friends)
             count = 0
             friends = ''
         count+=1
-media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+try:
+    media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
+except:
+    s.login(name, password)
+    media_id = s.upload(Snapchat.MEDIA_IMAGE, pic)
 s.send(media_id, friends)
