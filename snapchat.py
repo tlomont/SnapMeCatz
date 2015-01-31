@@ -154,7 +154,8 @@ class Snapchat:
  
         headers = {
             'User-Agent': Snapchat.USERAGENT,
-            'Accept-Language': 'en'
+            'Accept-Language: en-GB;q=1, en;q=0.9',
+            'Accept-Locale: en'
         }
 
         url = Snapchat.URL + endpoint
