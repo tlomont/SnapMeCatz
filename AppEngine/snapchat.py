@@ -15,13 +15,13 @@ if False:
     httplib.HTTPConnection.debuglevel = 1
 
 class Snapchat:
-    URL =                   'http://www.gmodules.com/ig/proxy?url=https://1.feelinsonice-hrd.appspot.com/bq'
+    URL =                   'https://feelinsonice.appspot.com/bq'
     SECRET =                'iEk21fuwZApXlz93750dmW22pw389dPwOk'        # API Secret
     STATIC_TOKEN =          'm198sOkJEn37DjqZ32lpRu76xmw288xSQ9'        # API Static Token
     BLOB_ENCRYPTION_KEY =   'M02cnQ51Ji97vwT4'                          # Blob Encryption Key
     HASH_PATTERN =          '0001110111101110001111010101111011010001001110011000110001000110'; # Hash pattern
-    USERAGENT =             'Snapchat/3.0.2 (Nexus 4; Android 18; gzip)'  # The default useragent
-    SNAPCHAT_VERSION =      '4.0.0'                                     # Snapchat Application Version
+    USERAGENT =             'Snapchat/8.0.1.3 (Nexus 5; Android 21; gzip)'  # The default useragent
+    SNAPCHAT_VERSION =      'Snapchat/8.0.1.3'                                     # Snapchat Application Version
 
     MEDIA_IMAGE =                        0  # Media: Image
     MEDIA_VIDEO =                        1  # Media: Video
@@ -153,9 +153,11 @@ class Snapchat:
 
         data['req_token'] = self._hash(params[0], params[1])
         data['version'] = Snapchat.SNAPCHAT_VERSION
-
+ 
         headers = {
-            'User-Agent': Snapchat.USERAGENT
+            'User-Agent': Snapchat.USERAGENT,
+            'Accept-Language': 'en-GB;q=1, en;q=0.9',
+            'Accept-Locale': 'en'
         }
 
         url = Snapchat.URL + endpoint
